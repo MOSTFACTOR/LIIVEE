@@ -2,13 +2,30 @@ address{
   color: whitesmoke;
   position: relative;
   float: right;
-  font-family: NotoSans;
+  font-family: 'NotoSans';
 }
+
 @font-face {
-  font-family: NotoSans;
-  src: url('FONTS\Noto_Sans\NotoSans-Regular.ttf');
+  font-family: "NotoSans";
+  font-weight: 28;
+  font-display: swap;
+  src: url(https://fonts.googleapis.com/css2?family=Noto-Sans:regular,wght@0,400;0,700;1,400;1,700&display=swap");
 }
 
 div {
-  font-family: NotoSans;
+  font-family: "NotoSans";
+}
+
+html {
+  font-family: "NotoSans", sans-serif;
+}
+
+/* System font before [[webfont]]s get loaded */
+body {
+  font-family: sans-serif;
+}
+
+/* Use [[webfont]] when [[webfont]] gets loaded*/
+.fonts-loaded body {
+  font-family: "Noto-Sans",  sans-serif;
 }
