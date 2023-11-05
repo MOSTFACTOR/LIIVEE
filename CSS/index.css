@@ -1,3 +1,11 @@
+head {
+  background-color: #303030;
+}
+
+body{
+  background-color: #878787;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -52,7 +60,8 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #00ceff;}
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
