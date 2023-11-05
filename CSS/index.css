@@ -7,7 +7,6 @@ address{
 
 @font-face {
   font-family: "NotoSans";
-  font-weight: 28;
   font-display: swap;
   src: url(https://fonts.googleapis.com/css2?family=Noto-Sans:regular,wght@0,400;0,700;1,400;1,700&display=swap");
 }
@@ -17,15 +16,15 @@ div {
 }
 
 html {
-  font-family: "NotoSans", sans-serif;
+  font-family: "NotoSans", "NotoSans-Regular";
 }
 
 /* System font before [[webfont]]s get loaded */
 body {
-  font-family: sans-serif;
+  font-family: "NotoSans";
 }
 
 /* Use [[webfont]] when [[webfont]] gets loaded*/
 .fonts-loaded body {
-  font-family: "Noto-Sans",  sans-serif;
+  font-family: "NotoSans",  "NotoSans-Regular";
 }
